@@ -913,3 +913,105 @@ body.nav-active{
     gap: 30px;
   }
 }
+
+
+/* Responsive for larger than 768px */
+
+@media (min-width: 768px){
+  /* Custom property */
+  :root{
+    /* typography */
+
+    /* font size */
+    --fontSize-1: 4.8rem;
+    --fontSize-2: 4rem;
+    --fontSize-3: 2.8rem;
+    --fontSize-4: 2.6rem;
+    --fontSize-5: 2.2rem;
+    --fontSize-6: 1.8rem;
+    --fontSize-7: 1.6rem;
+
+    /* spacing */
+    --section-spacing: 120px;
+  }
+  /* reused style */
+  .container{
+    max-width: 720px;
+  }
+  .btn{
+    height: 60px;
+    padding-inline: 60px;
+  }
+  :is(.desti,.gallery) :is(.section-subtitle, .section-title){
+    text-align: center;
+  }
+
+  /* preloader */
+  .preloader .img{
+    width: 80px;
+  }
+
+  /* hero */
+  .hero{
+    padding-block-start: 180px;
+  }
+  .hero-subtitle{
+    --fontSize-7: 1.8rem;
+    padding: 10px 30px;
+  }
+  .hero-btn{
+    gap: 32px;
+  }
+  .hero-btn .btn-img{
+    width: 80px;
+    height: 80px;
+  }
+  .hero-btn ion-icon{
+    padding: 12px;
+  }
+  .hero-banner{
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  /* service */
+  .service .container{
+    gap: 35px;
+  }
+  .service-card{
+    padding: 40px 30px;
+  }
+  .service-card .card-title{
+    margin-block: 20px 10px;
+  }
+
+  /* destination */
+  .desti .section-title{
+    margin-block-end: 65px;
+  }
+  .desti-list{
+    gap: 50px 35px;
+  }
+  .desti-card .card-title{
+    margin-block-start: 25px;
+  }
+  .desti .btn{
+    margin-block-start: 60px;
+  }
+
+  /* experience */
+  .exp .section-text{
+    max-width: 600px;
+  }
+  .exp-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .exp-item{
+    gap: 15px;
+  }
+  .exp-item .exp-title{
+    font-size: 4rem;
+  }
+}
