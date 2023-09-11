@@ -868,3 +868,48 @@ body.nav-active{
 \*-----------------------------------*/
 
 /* Responsive for larger than 575px */
+
+@media (min-width: 575px){
+  /* Reused styles */
+  .container{
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* Header */
+  .navbar{
+    padding-inline: 40px;
+    padding-block-start: 40px;
+  }
+
+  /* Hero */
+  .hero-text{
+    max-width: 42ch;
+  }
+  .hero .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .hero .btn{
+    margin-block-end: 0;
+  }
+
+  /* Service */
+  .service .container{
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  /* Destination */
+  .desti-list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer */
+  .footer-bottom-list{
+    display: flex;
+    gap: 30px;
+  }
+}
