@@ -605,6 +605,10 @@ body.nav-active {
   cursor: pointer;
 }
 
+.service-card:nth-child(3):hover{
+  box-shadow: 0 0 25px black;
+}
+
 .service-card .card-title {
   margin-block: 10px 5px;
 }
